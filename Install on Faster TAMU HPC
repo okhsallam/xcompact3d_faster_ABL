@@ -1,0 +1,29 @@
+Here's a clear step-by-step guide for installing XCompact3d on TAMU's Faster HPC:
+
+Login and Create Directory
+
+bashCopyssh NetID@faster.hprc.tamu.edu
+cd $HOME
+mkdir xcompact3d && cd xcompact3d
+
+Load Required Modules
+
+bashCopymodule purge
+module load GCCcore/11.3.0
+module load CMake/3.29.3
+module load gompi/2023a
+
+Clone Repository
+
+bashCopygit clone https://github.com/xcompact3d/Incompact3d
+cd Incompact3d
+
+Set Fortran Compiler
+
+bashCopyexport FC=mpif90
+
+Configure and Build
+
+bashCopycmake -S . -B build
+cmake --build build -j 8
+The executable will be created at build/bin/xcompact3d
