@@ -37,7 +37,7 @@ Notes:
 
 -------------
 
-# XCompact3d Installation Guide for NREL Kestrel HPC
+# Installation Steps for XCompact3d on NREL Kestrel HPC
 
 This guide provides step-by-step instructions for installing XCompact3d on the NREL Kestrel HPC system.
 
