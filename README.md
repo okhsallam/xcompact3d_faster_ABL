@@ -96,15 +96,6 @@ After successful compilation, the executable should be located at:
 ls -l build/bin/xcompact3d
 ```
 
-## Common Issues and Solutions
-
-1. If you get MKL-related errors during configuration:
-   - Make sure you loaded the `intel-oneapi-mkl` module
-   - Verify all modules are loaded in the correct order
-
-2. If you see compiler warnings about Intel Fortran Compiler Classic (ifort):
-   - These are deprecation warnings and can be safely ignored for now
-   - The compiler will be supported through late 2024
 
 ## Module Requirements
 - intel-oneapi-compilers
@@ -112,11 +103,6 @@ ls -l build/bin/xcompact3d
 - intel-oneapi-mkl
 - cmake
 
-## Additional Notes
-
-1. The installation uses Intel's OneAPI toolchain, which is optimized for Kestrel's architecture.
-2. The build process includes the 2decomp-fft library automatically.
-3. Python with NumPy is required for running validation tests.
 
 
 ## Version Information
